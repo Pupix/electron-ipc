@@ -43,25 +43,29 @@ receives new information.
 </script>
 ```
 
-### Properties
+## Properties
 
 #### auto
 Default: `false`
 
 If set to `true` a the element will automatically send a message when `data` is changed.
 
+---
 #### data
 The element's data, either received from events or set by the user.
 
+---
 #### events
 The events associated to the element, either for listening or sending messages.
 
+---
 #### receiver
 Default: `false`
 
 If set to `true` the element becomes a `receiver` and is able to receive messages.
 
-### Events
+---
+## Events
 #### ipc-data-received
 
 Fired when data is received through ipc.
@@ -72,6 +76,7 @@ Fired when data is received through ipc.
  2. **data {*}** The data received
  3. **event {string}** The name of the event that generated the event
 
+---
 #### ipc-data-received
 Fired when data is sent through ipc.
  
@@ -81,7 +86,8 @@ Fired when data is sent through ipc.
  2. **data {*}** The data sent.
  3. **event {string}** The name of the event that generated the event.
 
-### Methods
+---
+## Methods
 #### send(data)
 Sends an ipc message using data. If no data is passed then the `data` set on the element will be sent.
  
